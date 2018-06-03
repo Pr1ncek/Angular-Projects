@@ -1,0 +1,7 @@
+<button (click)="setDisplay()">Display Details</button>
+
+<p [ngStyle]="{display: display}">
+  detail works!
+</p>
+
+<h4 [ngClass]="{'above-five': counter >= 5}" [ngStyle]="{backgroundColor: counter >= 5 ? 'blue' : 'white'}">{{counter}}</h4>

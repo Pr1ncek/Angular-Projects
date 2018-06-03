@@ -1,0 +1,7 @@
+
+
+<input type="text" [(ngModel)]="userName" (input)="onUpdateEraseButton()">
+
+<h3>Name: {{ userName }} </h3>
+
+<button [disabled]="isNameEmpty" (click)="resetName()">Erase Name</button>
